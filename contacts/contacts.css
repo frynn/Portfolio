@@ -1,0 +1,15 @@
+@import url(/style.css);
+
+.contact-section {
+    display: flex;
+}
+.contact-right {
+    background-image: url(/media/ContourLine.svg);
+    background-clip: border-box;
+    width: 40%;
+    height: 100%;
+}
+.contact-left {
+    width: 60%;
+    height: 100%;
+}

@@ -18,19 +18,76 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         />
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- favicon -->
+        <script src="/burger.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     </head>
     <body>
         <header>
             <a href="./index.html" class="logo">frynn's diary</a>
+            <a href="./index.html" class="logo small">fd</a>
             <nav>
                 <ul class="nav-btns">
                     <li><a href="#">Contacts</a></li>
                     <li><a href="https://github.com/frynn">GitHub</a></li>
                 </ul>
             </nav>
+            <button class="menu">
+                <svg width="30" height="30" viewBox="0 0 100 100">
+                    <path
+                        class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                    />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path
+                        class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                    />
+                </svg>
+            </button>
         </header>
+        <div class="burger-menu">
+            <div class="burger-menu-div">
+                <ul class="burger-links">
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="https://github.com/frynn">GitHub</a></li>
+                    <li>
+                        <a
+                            href="./media/matus-sergey-cv.docx"
+                            download="matus-sergey-cv"
+                            >Download CV</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
         <section class="greeting-section">
             <h1 class="greeting-txt">
                 Welcome to my Portfolio<br />
@@ -44,7 +101,13 @@
                     <div class="typed"></div>
                 </div>
             </div>
-            <button>Dowload CV</button>
+            <button class="button">
+                <a
+                    href="./media/matus-sergey-cv.docx"
+                    download="matus-sergey-cv"
+                    >Dowload CV</a
+                >
+            </button>
         </section>
         <section class="bio-section">
             <div class="bio">
@@ -155,7 +218,7 @@
                                     TruckBusters company. The goal of this
                                     project was to train layot skills.
                                 </p>
-                                <button class="src-btn">
+                                <button class="src-btn button">
                                     <a
                                         href="https://frynn.github.io/TruckBusters/index.html"
                                         >Source</a
@@ -185,7 +248,7 @@
                                     company. It was a college learning project.
                                     It's not done yet. Maybe one day...
                                 </p>
-                                <button class="src-btn">
+                                <button class="src-btn button">
                                     <a href="hhttps://github.com/frynn/strelka"
                                         >Source</a
                                     >
@@ -224,5 +287,6 @@
         </footer>
         <script src="./typed-text.js"></script>
         <script src="./swiper.js"></script>
+        <script src="./burger.js"></script>
     </body>
 </html>
