@@ -161,16 +161,6 @@ ul li {
     padding-left: 30px;
 }
 
-#menu_button {
-    display: none;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-}
-
-#menu_button:hover {
-    transform: scale(1.1);
-}
-
 /* main */
 .greeting-section {
     display: flex;
@@ -204,12 +194,12 @@ ul li {
     text-align: center;
     cursor: pointer;
     border: 0;
-    
+
     border: 2px solid transparent;
     border-color: #000;
     color: var(--main-txt-black);
     background: transparent;
-    
+
     transition: background, color 0.3s ease-in-out;
 }
 .button:hover {
@@ -441,7 +431,6 @@ section {
         height: 70vh;
     }
 
-
     /* bio section */
 
     .bio {
@@ -478,5 +467,8 @@ section {
     }
     .bio-txt {
         font-size: 16px;
+    }
+    .src-btn a {
+        padding: 12px 20px;
     }
 }
